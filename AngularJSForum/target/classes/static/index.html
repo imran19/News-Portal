@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="mainModule">
+<head>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="js/controllers/app.js"></script>
+    <script src="js/controllers/vijestiController.js"></script>
+    <script src="js/controllers/nestoController.js"></script>
+    <script src="js/controllers/kontaktController.js"></script>
+    <script src="js/controllers/probaController.js"></script>
+</head>
+
+<body ng-controller="vijestiController">
+
+  <nav>
+    <div>
+      <ul>
+	       <li><a href="#/">Novosti</a></li>
+	       <li><a href="#/nesto">Nesto</a></li>	       
+           <li><a href="#/kontakt">Kontakt</a></li>
+           <li><a href="#/proba">proba</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+    <div ng-view></div>
+    
+  </div>
+
+  
+</body>
+</html>

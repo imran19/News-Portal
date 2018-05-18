@@ -1,0 +1,31 @@
+	<div class="col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Novost
+				
+			</div>
+			<div class="panel-body">
+				<div class="alert alert-info margin-top-5" ng-show="deleteMessage">{{deleteMessage}}</div>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Ime</th>
+							<th>Novost</th>
+							
+						</tr>
+					</thead>
+					
+					<tbody>				
+						<tr ng-repeat="address in newsListWT">
+							<td>{{$index+1}}</td>
+							<td>{{address.name}}</td>
+							<td>{{address.address}}</td>
+							
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
